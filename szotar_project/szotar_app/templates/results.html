@@ -1,0 +1,39 @@
+<!-- szotar_app/templates/results.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Eredmények</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'index' %}">Főoldal</a>
+        <a href="{% url 'add_szopar' %}">Szópár hozzáadása</a>
+        <a href="{% url 'list_szoparok' %}">Szótár megtekintése</a>
+        <a href="{% url 'practice' %}">Gyakorlás indítása</a>
+    </div>
+    <div class="container">
+        <h1>Eredmények</h1>
+        <ul>
+        {% for eredmeny in eredmenyek %}
+            {% if eredmeny.helyes %}
+                <li class="success">
+                    {{ eredmeny.magyar }} - {{ eredmeny.adott_valasz }} (helyes)
+                </li>
+            {% else %}
+                <li class="error">
+                    {{ eredmeny.magyar }} - {{ eredmeny.adott_valasz }} (helyes válasz: {{ eredmeny.helyes_valasz }})
+                </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+        <a href="{% url 'practice' %}" class="back-link">Új gyakorlás indítása</a><br>
+        <a href="{% url 'index' %}" class="back-link">Vissza a főoldalra</a>
+    </div>
+    <footer>
+        &copy; 2024 Magyar-Angol Szótár
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- szotar_app/templates/practice.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Gyakorlás indítása</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'index' %}">Főoldal</a>
+        <a href="{% url 'add_szopar' %}">Szópár hozzáadása</a>
+        <a href="{% url 'list_szoparok' %}">Szótár megtekintése</a>
+        <a href="{% url 'practice' %}">Gyakorlás indítása</a>
+    </div>
+    <div class="container">
+        <h1>Gyakorlás indítása</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <label>Hány szót szeretnél gyakorolni?</label>
+            <input type="number" name="kerdesek_szama" min="1" required>
+            <input type="submit" value="Indítás">
+        </form>
+        <a href="{% url 'index' %}" class="back-link">Vissza a főoldalra</a>
+    </div>
+    <footer>
+        &copy; 2024 Magyar-Angol Szótár
+    </footer>
+</body>
+</html>

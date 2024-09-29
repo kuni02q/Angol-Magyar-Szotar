@@ -1,0 +1,47 @@
+<!-- szotar_app/templates/index.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Magyar-Angol Szótár</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'index' %}">Főoldal</a>
+        <a href="{% url 'add_szopar' %}">Szópár hozzáadása</a>
+        <a href="{% url 'list_szoparok' %}">Szótár megtekintése</a>
+        <a href="{% url 'practice' %}">Gyakorlás indítása</a>
+    </div>
+    <div class="container">
+        <h1>MASZ</h1>
+        <img src="{% static 'images/Vector.jpg' %}" alt="Logó" style="display: block; margin: 0 auto 20px; max-width: 150px;">
+        <h1>Magyar-Angol Szótár</h1>
+        <p style="text-align: center; font-size: 1.2em;">Válassz az alábbi lehetőségek közül:</p>
+        <ul class="options-list">
+            <li>
+                <a href="{% url 'add_szopar' %}">
+                    <img src="{% static 'images/Group 1.jpg' %}" alt="Szópár hozzáadása">
+                    <span>Szópár hozzáadása</span>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'list_szoparok' %}">
+                    <img src="{% static 'images/Group 2.jpg' %}" alt="Szótár megtekintése">
+                    <span>Szótár megtekintése</span>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'practice' %}">
+                    <img src="{% static 'images/Group 3.jpg' %}" alt="Gyakorlás indítása">
+                    <span>Gyakorlás indítása</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        &copy; 2024 Magyar-Angol Szótár
+    </footer>
+</body>
+</html>

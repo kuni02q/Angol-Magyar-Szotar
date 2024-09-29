@@ -1,0 +1,35 @@
+<!-- szotar_app/templates/list_szoparok.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Szótár tartalma</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'index' %}">Főoldal</a>
+        <a href="{% url 'add_szopar' %}">Szópár hozzáadása</a>
+        <a href="{% url 'list_szoparok' %}">Szótár megtekintése</a>
+        <a href="{% url 'practice' %}">Gyakorlás indítása</a>
+    </div>
+    <div class="container">
+        <h1>Szótár tartalma</h1>
+        {% if szoparok %}
+            <ul>
+            {% for szopar in szoparok %}
+                <li>{{ szopar.magyar }} : {{ szopar.angol }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p style="text-align: center; font-size: 1.1em;">A szótár üres.</p>
+        {% endif %}
+        <a href="{% url 'add_szopar' %}" class="back-link">Új szópár hozzáadása</a><br>
+        <a href="{% url 'index' %}" class="back-link">Vissza a főoldalra</a>
+    </div>
+    <footer>
+        &copy; 2024 Magyar-Angol Szótár
+    </footer>
+</body>
+</html>

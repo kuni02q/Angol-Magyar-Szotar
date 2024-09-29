@@ -1,0 +1,36 @@
+<!-- szotar_app/templates/add_szopar.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Szópár hozzáadása</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'index' %}">Főoldal</a>
+        <a href="{% url 'add_szopar' %}">Szópár hozzáadása</a>
+        <a href="{% url 'list_szoparok' %}">Szótár megtekintése</a>
+        <a href="{% url 'practice' %}">Gyakorlás indítása</a>
+    </div>
+    <div class="container">
+        <h1>Szópár hozzáadása</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <label>Magyar szó vagy mondat (max 80 karakter):</label>
+            <input type="text" name="magyar" maxlength="80" required>
+            <label>Angol fordítás (max 80 karakter):</label>
+            <input type="text" name="angol" maxlength="80" required>
+            <input type="submit" value="Hozzáadás">
+        </form>
+        <a href="{% url 'index' %}" class="back-link">Vissza a főoldalra</a>
+    </div>
+    <footer>
+        &copy; 2024 Magyar-Angol Szótár
+    </footer>
+</body>
+</html>
