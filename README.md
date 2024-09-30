@@ -4,9 +4,9 @@ Ez egy egyszerű Django alapú webes alkalmazás, amely lehetővé teszi magyar-
 
 ## Funkciók
 
-- **Szópárok hozzáadása**: Új magyar-angol szópárokat adhatsz hozzá a szótárhoz.
-- **Szótár megtekintése**: Megnézheted a szótárban tárolt összes szópárt.
-- **Gyakorlás**: Gyakorolhatod a szópárokat véletlenszerű kérdésekkel.
+- **Szópárok hozzáadása**
+- **Szótár megtekintése**
+- **Gyakorlás**
 
 ## Használat
 - Szópár hozzáadása: Új szópárokat adhatsz hozzá a szótárhoz.
