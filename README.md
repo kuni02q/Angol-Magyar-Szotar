@@ -15,5 +15,9 @@ Ez egy egyszerű Django alapú webes alkalmazás, amely lehetővé teszi magyar-
 
 
 ![Screenshot_7](https://github.com/user-attachments/assets/1c0ffde1-6700-4cdf-83fe-56be19ab20da)
+
+
 ![Screenshot_8](https://github.com/user-attachments/assets/f3d3046d-e0fe-4545-b3a3-6da363060a44)
+
+
 ![Screenshot_9](https://github.com/user-attachments/assets/e4b68d00-5822-4d69-b70e-be76caf5fff9)
