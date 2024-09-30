@@ -1,4 +1,4 @@
-# Magyar-Angol Szótár Django alkalmazás
+# Magyar-Angol Szótár 
 
 Ez egy egyszerű Django alapú webes alkalmazás, amely lehetővé teszi magyar-angol szópárok hozzáadását, megtekintését és gyakorlását. Az alkalmazás célja, hogy segítse a felhasználókat a nyelvtanulásban és a szókincs fejlesztésében.
 
