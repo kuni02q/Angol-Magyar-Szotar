@@ -9,9 +9,9 @@ Ez egy egyszerű Django alapú webes alkalmazás, amely lehetővé teszi magyar-
 - **Gyakorlás**: Gyakorolhatod a szópárokat véletlenszerű kérdésekkel.
 
 ## Használat
-- **Szópár hozzáadása: Új szópárokat adhatsz hozzá a szótárhoz.
-- **Szótár megtekintése: Megtekintheted a szótárban lévő összes szópárt.
-- **Gyakorlás indítása: Gyakorolhatod a szavakat véletlenszerű kérdésekkel.
+- Szópár hozzáadása: Új szópárokat adhatsz hozzá a szótárhoz.
+- Szótár megtekintése: Megtekintheted a szótárban lévő összes szópárt.
+- Gyakorlás indítása: Gyakorolhatod a szavakat véletlenszerű kérdésekkel.
 
 
 ![Screenshot_7](https://github.com/user-attachments/assets/1c0ffde1-6700-4cdf-83fe-56be19ab20da)
