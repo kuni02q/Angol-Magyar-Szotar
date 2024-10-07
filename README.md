@@ -35,12 +35,16 @@ Jelenleg nincs könnyen hozzáférhető eszköz, amely lehetővé tenné a felha
 3. Követelménylista
 Az alábbiakban található a rendszer funkcióinak listája:
 
-Modul ID	Név	Kifejtés
-K1	Szópár hozzáadása	A felhasználó új magyar-angol szópárokat adhat hozzá a szótárhoz. A felhasználó megadhat egy magyar szót/mondatot és annak angol megfelelőjét.
-K2	Szótár megtekintése	A felhasználó megtekintheti az összes szópárt, amelyet korábban hozzáadtak az alkalmazáshoz. A szópárok listázása átlátható és kereshető.
-K3	Gyakorlás indítása	A felhasználó véletlenszerűen kiválasztott szópárokkal gyakorolhat, és megpróbálhatja helyesen lefordítani azokat. A gyakorlás végén a rendszer értékeli a teljesítményt.
-K4	Eredmények megtekintése	A felhasználó megtekintheti, hogy a gyakorlás során hány helyes választ adott, és hol hibázott. Az eredmények segítik a felhasználó fejlődésének nyomon követését.
-K5	Admin felület	Az adminisztrátorok új szópárokat adhatnak hozzá, módosíthatják vagy törölhetik a meglévőket, valamint felügyelhetik a felhasználók által hozzáadott tartalmakat.
+## Követelménylista
+
+| Modul ID | Név                  | Kifejtés                                                                                                                                           |
+|----------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| K1       | Szópár hozzáadása    | A felhasználó új magyar-angol szópárokat adhat hozzá a szótárhoz. A felhasználó megadhat egy magyar szót/mondatot és annak angol megfelelőjét.      |
+| K2       | Szótár megtekintése  | A felhasználó megtekintheti az összes szópárt, amelyet korábban hozzáadtak az alkalmazáshoz. A szópárok listázása átlátható és kereshető.           |
+| K3       | Gyakorlás indítása   | A felhasználó véletlenszerűen kiválasztott szópárokkal gyakorolhat, és megpróbálhatja helyesen lefordítani azokat. A gyakorlás végén a rendszer értékeli a teljesítményt. |
+| K4       | Eredmények megtekintése | A felhasználó megtekintheti, hogy a gyakorlás során hány helyes választ adott, és hol hibázott. Az eredmények segítik a felhasználó fejlődésének nyomon követését. |
+| K5       | Admin felület        | Az adminisztrátorok új szópárokat adhatnak hozzá, módosíthatják vagy törölhetik a meglévőket, valamint felügyelhetik a felhasználók által hozzáadott tartalmakat. |
+
 
 4. Jelenlegi üzleti folyamatok modellje
 A hagyományos szótárak és nyelvtanulási platformok korlátozott lehetőségeket nyújtanak. A felhasználók csak előre meghatározott szópárokat tanulhatnak, és gyakran nem kapnak lehetőséget saját tartalom hozzáadására. Ez a korlátozás nehezíti a tanulási folyamat személyre szabását, és sok felhasználó nem találja érdekesnek vagy hasznosnak a statikus szótárakat. Az oktatási intézmények és a nyelvtanulók számára szükség van egy rugalmasabb, játékosabb megközelítésre.
